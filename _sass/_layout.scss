@@ -1,0 +1,98 @@
+.aside {
+  position: fixed;
+  top: 3rem;
+  left: 3rem;
+  width: 20%;
+  .header {
+    position: relative;
+    height: 12rem;
+  }
+  .nav, .links {
+    ul {
+      list-style: none;
+    }
+    li {
+      margin-bottom: 0.6rem;
+      position: relative;
+      a {
+        position: relative;
+        @include hoverUnderscore;
+        &.active {
+          &::after {
+            content: '\27B8';
+            position: absolute;
+            right: -3rem;
+            top: -.1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main {
+  margin-left: 20%;
+  margin-top: 12rem;
+  max-width: 80rem;
+  .page {
+    .project {
+      margin-bottom: 10rem;
+      &__title {
+        margin-bottom: 1rem;
+        line-height: 1;
+        a {
+          @include hoverUnderscore;
+        }
+      }
+      &.webdev {
+        ul {
+          list-style: none;
+          li {
+            margin-bottom: 10rem;
+            img {
+              margin-bottom: 1rem;
+            }
+            p:last-child {
+              color: $light-grey;
+            }
+          }
+        }
+      }
+    }
+    .blog {
+      & > * {
+        display: inline-block;
+        vertical-align: top;
+      }
+      &__date {
+        color: $light-grey;
+        margin-right: 2rem;
+      }
+      &__title a {
+        @include hoverUnderscore;
+      }
+    }
+  }
+  .post {
+    img {
+      margin: 4rem auto;
+    }
+    a {
+      padding-bottom: 0.2rem;
+      @include hoverUnderscore;
+      border-bottom: 1px dashed $light-grey;
+    }
+    ul, ol {
+      list-style-position: inside;
+      margin-bottom: 1rem;
+    }
+    &__footnote {
+      color: $light-grey;
+      margin-top: 10rem;
+    }
+  }
+}
+
+.footer {
+  margin-top: 15rem;
+}

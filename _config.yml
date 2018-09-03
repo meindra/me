@@ -1,0 +1,20 @@
+title: Meindra Rahardian
+description: I'm a front-end developer based in Tulungagung, Indonesia
+email: meindra.me@gmail.com
+twitter: lubangkelinci
+github: meindra
+baseurl: ""
+markdown: kramdown
+sass:
+  style: compressed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+      is_post: true
+      permalink: /:title/

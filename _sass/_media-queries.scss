@@ -1,0 +1,83 @@
+@media (max-width: 1080px) {
+  .aside {
+    width: 28%;
+  }
+  .main {
+    margin-left: 28%;
+  }
+}
+
+@media (max-width: 800px) {
+  .aside {
+    position: relative;
+    top: unset;
+    left: unset;
+    width: 100%;
+    .nav, .links {
+      margin-bottom: .5rem;
+      li {
+        display: inline-block;
+        &::after {
+          content: ' /';
+        }
+        a.active {
+          border-bottom: 1px solid currentColor;
+          &::after {
+            content: none;
+          }
+        }
+      }
+  }
+  }
+  .main {
+    margin-left: 0;
+    .page .project.webdev p:last-child {
+      max-width: 100%;
+    }
+    .post {
+      img {
+        @include fullWidthImage;
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  html {
+    font-size: 58%;
+  }
+  .main {
+    p {
+      max-width: 100%;
+    }
+    .page {
+      .blog {
+        margin-bottom: 5rem;
+        & > * {
+          display: block;
+        }
+      }
+      .project__thumb {
+        @include fullWidthImage;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    padding: 2rem;
+  }
+  .main .page .project.webdev ul li {
+    padding-left: 0;
+    margin-bottom: 4rem;
+    p:first-child {
+      font-size: 2rem;
+      position: relative;
+      display: block;
+    }
+  } 
+}

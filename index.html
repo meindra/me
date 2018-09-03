@@ -1,0 +1,16 @@
+---
+layout: page
+---
+
+<div class="project webdev">
+  <h2 class="project__category">Projects</h2>
+  <ul>
+    {% for project in site.data.webdev %}
+      <li>
+        <a href="{{ project.url }}" target="_blank" rel="noopener nereferrer"><img src="/images/projects/webdev/{{ project.image }}" alt="{{ project.title }}, {{ project.description }}"></a>
+        <p class="project__title"><a href="{{ project.url }}" target="_blank" rel="noopener nereferrer">{{ project.title }}</a></p>
+        <p>{{ project.description }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
