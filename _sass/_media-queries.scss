@@ -31,8 +31,17 @@
   }
   .main {
     margin-left: 0;
-    .page .project.webdev p:last-child {
-      max-width: 100%;
+    .page .project.webdev li {
+      & > a {
+        position: relative;
+        display: block;
+        margin-left: -3rem;
+        margin-right: -3rem;
+        width: calc(100% + 6rem);
+      }
+      p:last-child {
+        max-width: 100%;
+      }
     }
     .post {
       img {
@@ -73,7 +82,7 @@
   }
   .main .page .project.webdev ul li {
     padding-left: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
     p:first-child {
       font-size: 2rem;
       position: relative;
