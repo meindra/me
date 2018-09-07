@@ -75,11 +75,10 @@
   }
   .post {
     img {
-      margin: 4rem auto;
+      margin: 3rem auto;
     }
     a {
-      padding-bottom: 0.2rem;
-      @include hoverUnderscore;
+      @include hoverUnderscore();
       border-bottom: 1px dashed $light-grey;
     }
     ul, ol {
