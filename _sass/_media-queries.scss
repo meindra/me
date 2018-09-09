@@ -83,6 +83,11 @@
   .main .page .project.webdev ul li {
     padding-left: 0;
     margin-bottom: 8rem;
+    & > a {
+      margin-left: -2rem;
+      margin-right: -2rem;
+      width: calc(100% + 4rem);
+    }
     p:first-child {
       font-size: 2rem;
       position: relative;
