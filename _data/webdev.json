@@ -4,47 +4,41 @@
     "description": "Like to-do list, but for books.",
     "url": "https://maca.meindra.me/",
     "source": "https://github.com/meindra/maca",
-    "techs": ["JS", "PHP", "React", "GoodReads API"],
-    "image": "maca.jpg"
+    "techs": ["JS", "PHP", "React", "GoodReads API"]
   },
   {
     "title": "@dailyalbumbot",
     "description": "A twitter bot that tweets an album a day.",
     "url": "https://twitter.com/dailyalbumbot",
     "source": null,
-    "techs": ["PHP", "Twitter API", "RateYourMusic"],
-    "image": "dailyalbumbot.jpg"
+    "techs": ["PHP", "Twitter API", "RateYourMusic"]
   },
   {
     "title": "Loomier",
     "description": "Web app for movie recommendations based on similarity or certain criteria.",
     "url": "https://loomier.meindra.me/",
     "source": "https://github.com/meindra/loomier",
-    "techs": ["JS", "PHP", "React", "TheMovieDB API"],
-    "image": "loomier.jpg"
+    "techs": ["JS", "PHP", "React", "TheMovieDB API"]
   },
   {
     "title": "Little Wing",
     "description": "A simple wordpress theme focused on good typography.",
     "url": "https://littlewing.meindra.me/",
     "source": "https://github.com/meindra/littlewing",
-    "techs": ["PHP", "WordPress"],
-    "image": "little-wing.jpg"
+    "techs": ["PHP", "WordPress"]
   },
   {
     "title": "Nvws",
     "description": "Just another HackerNews feed clone.",
     "url": "https://nvws.meindra.me/",
     "source": "https://github.com/meindra/nvws",
-    "techs": ["JS", "Parcel", "HackerNews API"],
-    "image": "nvws.jpg"
+    "techs": ["JS", "Parcel", "HackerNews API"]
   },
   {
     "title": "Tulis",
     "description": "A simple and minimal web app for writing.",
     "url": "https://tulis.meindra.me/",
     "source": "https://github.com/meindra/tulis",
-    "techs": ["JS", "Parcel"],
-    "image": "tulis.jpg"
+    "techs": ["JS", "Parcel"]
   }
 ]
