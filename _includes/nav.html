@@ -4,10 +4,10 @@
         <a href="{{ site.baseurl }}/" {% if page.url=='/' %} class="active" {% endif %}>Projects</a>
       </li>
       <li>
-        <a href="{{ site.baseurl }}/about" {% if page.url=='/about/' %} class="active" {% endif %}>About</a>
+        <a href="{{ site.baseurl }}/blog" {% if page.url=='/blog/' or page.is_post %} class="active" {% endif %}>Blog</a>
       </li>
       <li>
-        <a href="{{ site.baseurl }}/blog" {% if page.url=='/blog/' or page.is_post %} class="active" {% endif %}>Blog</a>
+        <a href="{{ site.baseurl }}/about" {% if page.url=='/about/' %} class="active" {% endif %}>About</a>
       </li>
       <br>
     </ul>
