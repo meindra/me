@@ -67,6 +67,7 @@
       &__date {
         color: $light-grey;
         margin-right: 2rem;
+        margin-bottom: 1rem;
       }
       &__title a {
         @include hoverUnderscore;
@@ -88,6 +89,19 @@
     &__footnote {
       color: $light-grey;
       margin-top: 10rem;
+    }
+    .video {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      margin-bottom: 4rem;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }
