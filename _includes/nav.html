@@ -1,24 +1,18 @@
-<nav class="nav">
-    <ul>
-      <li>
-        <a href="{{ site.baseurl }}/" {% if page.url=='/' %} class="active" {% endif %}>Projects</a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/blog" {% if page.url=='/blog/' or page.is_post %} class="active" {% endif %}>Blog</a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/about" {% if page.url=='/about/' %} class="active" {% endif %}>About</a>
-      </li>
-      <br>
-    </ul>
-  </nav>
-  <nav class="links">
-    <ul>
-      <li>
-        <a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener noreferrer">Github</a>
-      </li>
-      <li>
-        <a href="mailto:{{ site.email }}">Email</a>
-      </li>
-    </ul>
-  </nav>
+<nav>
+  <ul>
+    <li>
+      <a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener noreferrer"
+        >GitHub</a
+      >
+    </li>
+    <li><a href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer">Email</a></li>
+    <li>
+      <a
+        href="https://linkedin.com/in/{{ site.linkedin }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        >LinkedIn</a
+      >
+    </li>
+  </ul>
+</nav>
